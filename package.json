@@ -1,6 +1,7 @@
 {
   "name": "react-context-vs-recoil",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.0.1",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
