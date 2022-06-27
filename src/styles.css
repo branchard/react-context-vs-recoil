@@ -1,0 +1,23 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.App > div {
+  background-color: #eee;
+  max-height: 100%;
+  overflow: scroll;
+  padding: 20px;
+}
