@@ -1,18 +1,16 @@
 import React from "react";
-import { useRecoilValue } from "recoil";
+import {useRecoilValue} from "recoil";
 import Todo from "./Todo";
-import { todos } from "./TodosState";
+import {todos} from "./TodosState";
 
 const RecoilTodosList = () => {
-  const todosList = useRecoilValue(todos);
+    const todosList = useRecoilValue(todos);
 
-  return (
-    <ul>
-      {todosList.map(todo => (
-        <Todo key={todo.id} todo={todo} />
-      ))}
-    </ul>
-  );
+    return (
+        <ul>
+            {todosList.map((todo: any) => <Todo key={todo.id} todo={todo}/>)}
+        </ul>
+    );
 };
 
 export default RecoilTodosList;
